@@ -6,6 +6,7 @@ body {
   color: #ffffff;
 }
 
+
 #footer {
   background: #1f66a5;
   height: 30px;
@@ -27,10 +28,6 @@ header {
   z-index: 2;
 }
 
-#header_background img {
-  padding: 20px;
-  margin-left: 20px;
-}
 
 #header_background2 {
   background-image: url('/assets/bg-header-2.png');
@@ -41,11 +38,16 @@ header {
   position:relative;
 }
 
+#glyph_logo {
+  position: relative;
+  z-index:3;
+  margin-top: -230px;
+}
+
 #refresh_tag  {
-  position: absolute;
-  top: 72px;
-  right:30px;
+  position: relative;
   z-index: 3;
+  margin-top: -87px;
 }
 
 #refresh_tag p {
@@ -57,12 +59,11 @@ header {
 #glyph_g {
   position: relative;
   z-index:3;
-  margin-top: -80px;
-  margin-left: 50px;
+  margin-top: -45px;
+  text-align: center;
 }
 
 #explanation {
-  text-align: center;
   text-transform: uppercase;
   margin-top: 30px;
   margin-bottom: 90px;
@@ -80,9 +81,12 @@ header {
   margin-top: -50px;
   background: #e3e3e3;
   padding: 20px 10px;
-  border-radius: 5px;
+  border-radius: 8px;
   -moz-border-radius: 5px;
   text-align:center;
+  -webkit-box-shadow: 0 5px 5px #c0c0c0;
+  -moz-box-shadow: 0 5px 5px #c0c0c0;
+  box-shadow: 0 5px 5px #c0c0c0;
 }
 
 #signup_box p {
@@ -99,10 +103,9 @@ header {
   background: #feca0b;
   color: white;
   margin-top: -10px;
-  margin-left: 315px;
+  margin-left: 78%;
 }
 
 #social_buttons {
-  margin-left: 30px;
-  margin-top: -10px;
 }
+

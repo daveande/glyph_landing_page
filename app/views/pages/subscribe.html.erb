@@ -1,45 +1,57 @@
 <div id="banner_wrapper">
   <div id="header_background">
-    <%= image_tag('/assets/glyph-logo.png', :alt => "Glyph") %>
   </div>
   <div id="header_background2"></div>
-  <div id="refresh_tag"><p>Refresh your wallet...</p></div>
-  <div class="span4 offset7">
-    <div id="glyph_g">
-      <%= image_tag('/assets/glyph-g.png', :alt => "Glyph") %>
+  <div class="container" style="padding:0 5%">
+    <%= image_tag('/assets/glyph-logo.png', :id => "glyph_logo", :alt => "Glyph") %>
+    <div class="hidden-phone" id="refresh_tag"><p>Refresh your wallet...</p></div>
+    <div class="row">
+      <div class="span4 offset6">
+        <div id="glyph_g">
+          <%= image_tag('/assets/glyph-g.png', :alt => "Glyph") %>
+        </div>
+      </div>
     </div>
-  </div>
-      <% if flash[:notice] %>
-        <p class="notice"><%= flash[:notice] %></p>
-      <% end %>
-  <div class="row">
-    <div class="span6 offset6">
-      <div id="explanation">
-        <h1><span>Zero effort, more rewards<span></h1>
-        <h1>Choose the right card</h1>
-        <h1><span>Every time</span> you buy</h1>
+    <div class="row">
+      <div class="span6 offset6">
+        <div id="explanation">
+          <h1><span>Zero effort, more rewards<span></h1>
+          <h1>Choose the right card</h1>
+          <h1><span>Every time</span> you buy</h1>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
-<div class="row">
+<div class="container" style="padding:0 5%">
   <div id="main_wrapper">
-    <div class="span4 offset7">
-      <div id="signup_box">
-        <p>Sign up to keep a pulse on Glyph.</p>
+    <div class="span4 offset6">
+      <div class="row">
+        <div id="signup_box">
+          <p>Sign up to keep a pulse on Glyph.</p>
 
-        <%= form_tag(pages_subscribe_url, :method => "post") do %>
-            <%= text_field_tag(:email, nil, :placeholder => "Enter your email address...") %>
+          <%= form_tag(pages_subscribe_url, :method => "post") do %>
+              <%= text_field_tag(:email, nil, :placeholder => "Enter your email address...") %>
+        </div>
       </div>
       <div class="row">
             <%= submit_tag("Stay Tuned", :class => "btn-large", :id => "stay_tuned") %>
         <% end %>
       </div>
       <div class="row">
+        <div class="span4" style="margin-left:0px;">
+          <% if flash[:notice] %>
+            <p class="alert alert-success"><%= flash[:notice] %></p>
+          <% end %>
+        </div>
+      </div>
+      <div class="row">
         <div id="social_buttons">
           <%= image_tag('/assets/twitter-logo.png') %>
           <%= image_tag('/assets/facebook-logo.png') %>
+          <a href="https://twitter.com/share" class="twitter-share-button" data-text="I just signed up for Glyph to get more rewards every time I use my credit cards." data-hashtags="glyphit">Tweet</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
         </div>
       </div>
     </div>
