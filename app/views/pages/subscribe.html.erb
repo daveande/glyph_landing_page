@@ -4,8 +4,10 @@
   </div>
   <div id="header_background2"></div>
   <div id="refresh_tag"><p>Refresh your wallet...</p></div>
-  <div id="glyph_g">
-    <%= image_tag('/assets/glyph-g.png', :alt => "Glyph") %>
+  <div class="span4 offset7">
+    <div id="glyph_g">
+      <%= image_tag('/assets/glyph-g.png', :alt => "Glyph") %>
+    </div>
   </div>
       <% if flash[:notice] %>
         <p class="notice"><%= flash[:notice] %></p>
