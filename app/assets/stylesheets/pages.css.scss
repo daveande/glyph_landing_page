@@ -6,6 +6,10 @@ body {
   color: #ffffff;
 }
 
+h1 {
+  font-size: 29px;
+}
+
 
 #footer {
   background: #1f66a5;
@@ -60,7 +64,7 @@ header {
   position: relative;
   z-index:3;
   margin-top: -45px;
-  text-align: center;
+  margin-left: 45px;
 }
 
 #explanation {
@@ -75,6 +79,11 @@ header {
 
 #main_wrapper {
   height: 240px;
+}
+
+#iphone_landing {
+  margin-top: -350px;
+  margin-left: -34px;
 }
 
 #signup_box {
