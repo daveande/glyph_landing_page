@@ -2,14 +2,11 @@
   <div id="header_background">
   </div>
   <div id="header_background2"></div>
-  <div class="container" style="padding:0 5%">
+  <div class="container">
     <%= image_tag('/assets/glyph-logo.png', :id => "glyph_logo", :alt => "Glyph") %>
-    <div class="hidden-phone" id="refresh_tag"><p>Refresh your wallet...</p></div>
-      <div class="span6 visible-phone">
-          <%= image_tag('/assets/iphone-screen-landing.png') %>
-        </div>
+    <div id="refresh_tag"><p>Refresh your wallet</p></div>
     <div class="row">
-      <div class="span4 offset7 hidden-phone">
+      <div class="span4 offset7">
         <div id="glyph_g">
           <%= image_tag('/assets/glyph-g.png', :alt => "Glyph") %>
         </div>
@@ -28,15 +25,15 @@
 </div>
 
 
-<div class="container" style="padding:0 5%">
   <div id="main_wrapper">
+<div class="container">
     <div class="row">
-      <div class="span6 hidden-phone">
+      <div class="span6">
         <div id="iphone_landing">
           <%= image_tag('/assets/iphone-screen-landing.png') %>
         </div>
       </div>
-    <div class="span4 offset1">
+    <div class="span4 offset1" style="margin-left:145px;">
       <div class="row">
         <div id="signup_box">
           <p>Sign up to keep a pulse on Glyph.</p>

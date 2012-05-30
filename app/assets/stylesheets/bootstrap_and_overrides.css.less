@@ -1,7 +1,6 @@
 @import "twitter/bootstrap/bootstrap";
 body { padding-top: 0px; }
 
-@import "twitter/bootstrap/responsive";
 
 // Set the correct sprite paths
 @iconSpritePath: asset-path('twitter/bootstrap/glyphicons-halflings.png');
@@ -17,6 +16,8 @@ body { padding-top: 0px; }
 // Font Awesome
 @import "fontawesome";
 
+@sansFontFamily: Calibri, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
 // Your custom LESS stylesheets goes here
 //
 // Since bootstrap was imported above you have access to its mixins which
@@ -28,6 +29,9 @@ body { padding-top: 0px; }
 // Example:
 // @linkColor: #ff0000;
 
+
+@gridGutterWidth: 30px;
 form { margin-bottom: 0px; }
 input { width: 85%; }
+p { font-family: Calibri, "Helvetica Neue", Helvetica, Arial, sans-serif }
 
