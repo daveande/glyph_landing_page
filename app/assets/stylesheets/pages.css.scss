@@ -17,9 +17,20 @@ h1 {
   height: 30px;
 }
 
+.footer_content {
+  background: #1f66a5;
+  height: 30px;
+  margin: 0 auto;
+
+}
+
 .banner_wrapper {
   background-image: url('/assets/bg-pattern.png');
-  background-attachment: fixed;
+
+}
+
+.banner {
+  background-image: image-url('/assets/bg-pattern.png');
 
 }
 
