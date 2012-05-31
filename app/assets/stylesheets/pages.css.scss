@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-body {
+html, body {
   color: #ffffff;
   font-family: Calibri, "Helvetica Neue", Helvetica, Arial, sans-serif;
   width: 100%;
@@ -68,6 +68,7 @@ header {
   position: relative;
   z-index:3;
   margin-top: -230px;
+  padding-left: 10px;
 }
 
 
@@ -75,6 +76,7 @@ header {
   position: relative;
   z-index: 3;
   margin-top: -87px;
+  padding-right: 10px;
 }
 
 #refresh_tag p {
