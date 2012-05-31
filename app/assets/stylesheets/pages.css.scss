@@ -17,8 +17,9 @@ h1 {
   height: 30px;
 }
 
-#banner_wrapper {
+.banner_wrapper {
   background-image: url('/assets/bg-pattern.png');
+  background-attachment: fixed;
 
 }
 
@@ -64,7 +65,7 @@ header {
 #glyph_g {
   position: relative;
   z-index:3;
-  margin-top: -45px;
+  margin-top: -88px;
   margin-left: 45px;
 }
 
@@ -84,7 +85,7 @@ header {
 }
 
 #iphone_landing {
-  margin-top: -350px;
+  margin-top: -360px;
   margin-left: -34px;
 }
 
