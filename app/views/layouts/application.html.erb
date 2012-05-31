@@ -8,15 +8,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<div class="banner_wrapper">
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=246064935460580";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+
+  <div class="banner_wrapper">
     <div id="header_background"></div>
     <div id="header_background2"></div>
   </div>
   <div class="container">
-      <%= image_tag('/assets/glyph-logo.png', :id => "glyph_logo", :alt => "Glyph") %>
-      <div id="refresh_tag"><p>Refresh your wallet</p></div>
-    </div>
-    <%= yield %>
+    <%= image_tag('/assets/glyph-logo.png', :id => "glyph_logo", :alt => "Glyph") %>
+    <div id="refresh_tag"><p>Refresh your wallet</p></div>
+  </div>
+
+  <%= yield %>
+
   <div id="footer"></div>
 
 </body>
