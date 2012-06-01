@@ -134,10 +134,22 @@ header {
 }
 
 #stay_tuned {
-  background: #feca0b;
   color: white;
   margin-top: -10px;
   margin-left: 78%;
+  background-image: linear-gradient(top, #FFD001 39%, #FAB730 78%);
+  background-image: -o-linear-gradient(top, #FFD001 39%, #FAB730 78%);
+  background-image: -moz-linear-gradient(top, #FFD001 39%, #FAB730 78%);
+  background-image: -webkit-linear-gradient(top, #FFD001 39%, #FAB730 78%);
+  background-image: -ms-linear-gradient(top, #FFD001 39%, #FAB730 78%);
+
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.39, #FFD001),
+    color-stop(0.78, #FAB730)
+  );
 }
 
 #social_buttons {
